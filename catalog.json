@@ -1,0 +1,147 @@
+{
+  "schema": 1,
+  "generatedAt": "2026-08-12T16:43:01Z",
+  "count": 10,
+  "skills": [
+    {
+      "slug": "excalidraw-layout-rules",
+      "name": "excalidraw-layout-rules",
+      "description": "Layout rules for creating clean, readable Excalidraw diagrams programmatically via evaluate_expression. Prevents common mistakes: overlapping arrows, cramped text, unreadable labels.",
+      "trigger": "excalidraw|diagram|prozess.*zeichn|flowchart|flussdiagramm|visualisier.*prozess",
+      "components": [
+        "prompt"
+      ],
+      "version": "1.0.0",
+      "file": "excalidraw-layout-rules.skill",
+      "bytes": 1831,
+      "uncompressed": 2872,
+      "sha256": "cd2585c459baca0cff3b85d7eedd514632520d183feb6cc60f521c36e32f84c4"
+    },
+    {
+      "slug": "humanizer",
+      "name": "humanizer",
+      "description": "Identifies and removes signs of AI-generated writing from text. Detects inflated symbolism, promotional language, superficial -ing analyses, vague attributions, em dash overuse, rule of three, AI vocabulary, passive voice, negative parallelisms, filler phrases, and more. Makes text sound natural and human-written.",
+      "trigger": "humanize|humanis|human.*klingen|menschlich.*klingen|ai.*writing|ki.*text.*entfernen|natuerlich.*klingen|sound.*natural|remove.*ai|ai.*pattern|slop|ki.*muster|text.*ueberarbeiten|rewrite.*natural|mensch.*schreiben",
+      "components": [
+        "prompt"
+      ],
+      "version": "1.0.0",
+      "file": "humanizer.skill",
+      "bytes": 3544,
+      "uncompressed": 7297,
+      "sha256": "a55348491b009dedf9c90a8fceb974042dbb86b4f0f97723a912859e9a2ad6ca"
+    },
+    {
+      "slug": "knowledge-batch-ingest",
+      "name": "knowledge-batch-ingest",
+      "description": "Integrate an entire folder of notes and documents at once. Groups files thematically, presents proposals per group, and processes after user confirmation. Uses entity cache across files for token efficiency.",
+      "trigger": "batch.*ingest|alle.*integrier|ordner.*einpflege|inbox.*integrier|batch.*import|alle.*notes.*einordne",
+      "components": [
+        "prompt"
+      ],
+      "version": "1.0.0",
+      "file": "knowledge-batch-ingest.skill",
+      "bytes": 2287,
+      "uncompressed": 4375,
+      "sha256": "2d1d2d0d771f60112098708ef9ae52705b2e66634dae2e8c2a8eb9158383e493"
+    },
+    {
+      "slug": "knowledge-ingest",
+      "name": "knowledge-ingest",
+      "description": "Integrate new notes into the knowledge graph. Create PDFs as markdown source notes. Set properties, links, MOC entries. Prefer existing entities, propose new ones as stub notes.",
+      "trigger": "integrier|einordne|ingest|einpflege|knowledge.*maintain|wissen.*pflege|note.*einordne|ordne.*ein|pdf.*umwandel|pdf.*markdown|quelle.*anlegen",
+      "components": [
+        "prompt"
+      ],
+      "version": "1.0.0",
+      "file": "knowledge-ingest.skill",
+      "bytes": 5225,
+      "uncompressed": 12549,
+      "sha256": "ee52c9bb8a44de74aebc4ef9ebf0f7b3ae20a6ed8837c0585bee903db735eab7"
+    },
+    {
+      "slug": "knowledge-rename",
+      "name": "knowledge-rename",
+      "description": "Batch-rename attachments (PDFs, images) by convention. Author-Year_Title for sources, context-based for images.",
+      "trigger": "umbenennen|rename|dateiname|attachment.*name|benenne.*um|name.*korrig",
+      "components": [
+        "prompt"
+      ],
+      "version": "1.0.0",
+      "file": "knowledge-rename.skill",
+      "bytes": 1219,
+      "uncompressed": 2091,
+      "sha256": "2652a80dc0c9677877bbf09a114e8b0f359bedc571d9760a5f7feb4aa4d7bb34"
+    },
+    {
+      "slug": "meeting-summary",
+      "name": "meeting-summary",
+      "description": "Compact summary of a transcript note that stays digestible in under a minute. Strictly on the transcript, no interpretations. Sets block-IDs at key passages and links each statement in the summary discreetly via ↗ symbol to the source passage. Single-note layout (summary on top, transcript below).",
+      "trigger": "meeting.*summary|meeting.*zusammenfassung|protokoll|transkript.*zusammenfassung|besprechung.*notiz",
+      "components": [
+        "prompt"
+      ],
+      "version": "1.0.0",
+      "file": "meeting-summary.skill",
+      "bytes": 5777,
+      "uncompressed": 13116,
+      "sha256": "cd4288f05b8867f82bba53116cefe50bb8f25d03497556624aa291d62155ddfe"
+    },
+    {
+      "slug": "note-creator",
+      "name": "note-creator",
+      "description": "Creates new Obsidian notes with content that is always humanized and directly citable (zitierfähig). Triggered whenever the user asks to create, write, or draft a note, document, summary, or any vault content. Enforces the humanizer skill on all generated text before writing to the vault. Handles German umlauts (ö ä ü) correctly. Avoids em dashes and en dashes. Produces natural, human-sounding prose.",
+      "trigger": "",
+      "components": [
+        "prompt"
+      ],
+      "version": "1.0.0",
+      "file": "note-creator.skill",
+      "bytes": 2878,
+      "uncompressed": 5506,
+      "sha256": "0b2e160cbc059da8ecd41dfe30c52cbe57223deab26ff50ae8fa0c3fcb04171a"
+    },
+    {
+      "slug": "office-workflow",
+      "name": "office-workflow",
+      "description": "Professional workflow for creating Office documents (PPTX, DOCX, XLSX) with structured process, design principles, and quality standards",
+      "trigger": "pr[aä]sentation.*erstell|erstell.*pr[aä]sentation|presentation.*creat|creat.*presentation|folie.*erstell|erstell.*folie|deck.*erstell|powerpoint|pptx|dokument.*erstell|erstell.*dokument|document.*creat|docx|word.*erstell|spreadsheet|tabelle.*erstell|xlsx|excel",
+      "components": [
+        "prompt"
+      ],
+      "version": "1.0.0",
+      "file": "office-workflow.skill",
+      "bytes": 1466,
+      "uncompressed": 2537,
+      "sha256": "85613b9a1be57fdc2a6c4c93ecc9f563de3a1535cbd4fc0895cc87091a80e792"
+    },
+    {
+      "slug": "presentation-design",
+      "name": "presentation-design",
+      "description": "Universal presentation design principles -- content classification, storytelling frameworks, visual vocabulary. Applies to ALL presentations.",
+      "trigger": "pr[aä]sentation.*erstell|erstell.*pr[aä]sentation|presentation.*creat|creat.*presentation|folie.*erstell|erstell.*folie|deck.*erstell|powerpoint|pptx",
+      "components": [
+        "prompt"
+      ],
+      "version": "1.0.0",
+      "file": "presentation-design.skill",
+      "bytes": 2434,
+      "uncompressed": 4298,
+      "sha256": "c54e47ceab55346791c17f0cc23f04118c99ea15b13e5d03a10d4c2cbe1bf725"
+    },
+    {
+      "slug": "weekly-meeting-summary",
+      "name": "weekly-meeting-summary",
+      "description": "Fasst alle Meeting-Notes der aktuellen Woche zu einem kompakten Weekly-Digest zusammen. Erstellt eine neue Note mit Kernaussagen, Entscheidungen, offenen Punkten und naechsten Schritten — geordnet nach Meeting. Trigger-Phrasen: weekly summary, Wochenzusammenfassung Meetings, summarise my meetings, fasse meine Meetings zusammen, weekly meeting digest, Meetings der Woche zusammenfassen, was war diese Woche in meinen Meetings.",
+      "trigger": "",
+      "components": [
+        "prompt"
+      ],
+      "version": "1.0.0",
+      "file": "weekly-meeting-summary.skill",
+      "bytes": 2105,
+      "uncompressed": 4172,
+      "sha256": "1f98804edd71b05bf6d7e51d8ae580c16fc9356f01c00cecb806dde7c14f835f"
+    }
+  ]
+}
