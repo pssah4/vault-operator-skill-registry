@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "generatedAt": "2026-08-13T17:15:24Z",
-  "count": 8,
+  "generatedAt": "2026-08-13T18:04:03Z",
+  "count": 9,
   "skills": [
     {
       "slug": "daily-briefing",
@@ -68,6 +68,24 @@
       "uncompressed": 83630,
       "sha256": "885c1c167fbcb63dc0cfea0586fa2bc11513d2bb967b2c6bf9102568c04f419c",
       "content": "5dbaba4001343c0f81cf92a0f3b7a14db10a79d3cd5a2b02b95f9f7064327bcd",
+      "license": "Apache-2.0"
+    },
+    {
+      "slug": "interview-insights",
+      "name": "interview-insights",
+      "description": "Summarizes a single qualitative product interview into a citable OKF \"interview\" note (phase-detected, confirmed before writing). Also synthesizes several named interview notes into a weighted, actionable Insight Report, a team share-out, a Board Dashboard, and one themeable offline HTML Insight Board. Delivers real synthesis (claim + evidence + weight + implication + confidence + uncertainty), not an interview summary; asks at the start for a hypothesis set / business analysis and, if given, adds a Hypothesen view classifying each assumption validiert / falsifiziert / unklar. Asks for the design template first and, for a corporate design, derives colours, font, logo and icons from the real brand assets.",
+      "trigger": "",
+      "components": [
+        "prompt",
+        "scripts",
+        "references"
+      ],
+      "version": "1.0.0",
+      "file": "interview-insights.skill",
+      "bytes": 70395,
+      "uncompressed": 164345,
+      "sha256": "9532f016f9241bb51a1f5b3d071ebb371a5685813fe43c358cf51500d8d2a2d3",
+      "content": "4b5b2a620edc0220e18242e393fef06b6024201519a88f088cb4f4ab386abecd",
       "license": "Apache-2.0"
     },
     {
