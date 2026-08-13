@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "generatedAt": "2026-08-13T18:04:03Z",
-  "count": 9,
+  "generatedAt": "2026-08-13T23:32:55Z",
+  "count": 10,
   "skills": [
     {
       "slug": "daily-briefing",
@@ -43,14 +43,15 @@
       "description": "One source in, one note out, no dialog. Reads a PDF, Office file, web clip or markdown and writes an OKF note with overview, key statements and a position marker per statement, in 30 seconds to two minutes. Use it when speed beats depth, for inbox capture, image-heavy PDFs, short clips and Office files. Triggers include ingest this, schnell ingesten, nimm das auf, ab in die Inbox, quick ingest, webclip aufnehmen. NOT for a source you want to think through with the user, where the topics get picked and every claim gets a block-level link back into the source: that is ingest-deep. Not for meeting recordings: that is meeting-summary. Not for connecting a note that already exists to the rest of the vault: that is knowledge-link.",
       "trigger": "schneller.*ingest|quick.*ingest|inbox.*aufnahme|webclip.*ingest|aufnehmen.*note|integriere.note",
       "components": [
-        "prompt"
+        "prompt",
+        "references"
       ],
       "version": "1.0.0",
       "file": "ingest.skill",
-      "bytes": 13773,
-      "uncompressed": 35809,
-      "sha256": "8439ec33e153e004dba7827c851585123d2b3188b25228c863d95b1980faa3c5",
-      "content": "2801a9c9b2b45179fd8bcc97312b21e0b27531be49268342616268a8082ca84c",
+      "bytes": 14823,
+      "uncompressed": 37486,
+      "sha256": "b1c6b2ddda1d883593ba432f7f57089596f9e5662e4b580f630af53e9eb3bc96",
+      "content": "b55feb77222e579b2906c43f0dab304c2037a2a50dd12688f6ee4e29267345fe",
       "license": "Apache-2.0"
     },
     {
@@ -64,10 +65,10 @@
       ],
       "version": "1.0.0",
       "file": "ingest-deep.skill",
-      "bytes": 33816,
-      "uncompressed": 83630,
-      "sha256": "885c1c167fbcb63dc0cfea0586fa2bc11513d2bb967b2c6bf9102568c04f419c",
-      "content": "5dbaba4001343c0f81cf92a0f3b7a14db10a79d3cd5a2b02b95f9f7064327bcd",
+      "bytes": 34959,
+      "uncompressed": 85549,
+      "sha256": "9493e2165b72abc5ef6a6faa0ce36918fe50fb02d2bb6fd487717af6e94be1f6",
+      "content": "9db04a07e8271412049a28d0d7f13eeff688cb845a51639e1f8cabdb6a3edcc4",
       "license": "Apache-2.0"
     },
     {
@@ -82,10 +83,10 @@
       ],
       "version": "1.0.0",
       "file": "interview-insights.skill",
-      "bytes": 70395,
-      "uncompressed": 164345,
-      "sha256": "9532f016f9241bb51a1f5b3d071ebb371a5685813fe43c358cf51500d8d2a2d3",
-      "content": "4b5b2a620edc0220e18242e393fef06b6024201519a88f088cb4f4ab386abecd",
+      "bytes": 71372,
+      "uncompressed": 165859,
+      "sha256": "5615c6cb208b410bc3e441c9bbb91e9cae08b6e6fd8d75429f54f0d8098bdda7",
+      "content": "0c4ad0072c238c0b84807fb6ffb9fa54cf7b15443c959e28c2b279891c7c63c7",
       "license": "Apache-2.0"
     },
     {
@@ -134,6 +135,24 @@
       "uncompressed": 16864,
       "sha256": "9946857dd84d8a8de01aeee4819bbeed54649dd2ba7517d2c3d7010f741025a0",
       "content": "c7015dcba94db55defbc48d0db1dccad3241af6421b4c3eac611e16c9d2a5e38",
+      "license": "Apache-2.0"
+    },
+    {
+      "slug": "skill-creator",
+      "name": "skill-creator",
+      "description": "Design and build a Vault Operator skill together with the user. When they have a pain or a wish but no solution yet, work out the problem with them first, then run a requirements dialog, a feasibility check against the real runtime (tools, sandbox, vault), and a confirmed brief before any file is written. Every build passes a validation script whose verdict is a tool result, not a claim. Use this whenever the user wants to create, refine or automate a repeatable workflow, a domain expertise or a tool recipe as a skill; when something costs them time weekly and they cannot name the solution; and when they ask for a recurring deliverable, because the cadence is the signal, not the verb. Also use this to diagnose and fix a skill that misbehaves, even when the user only names the symptom. Triggers include \"create a skill\", \"build me a skill\", \"make this repeatable\", \"neuer Skill\", \"kannst du das automatisieren\", \"improve this skill\", \"der Skill macht X falsch\", \"warum verschwindet die Skill\", \"fix this skill\".",
+      "trigger": "",
+      "components": [
+        "prompt",
+        "scripts",
+        "references"
+      ],
+      "version": "1.0.0",
+      "file": "skill-creator.skill",
+      "bytes": 62936,
+      "uncompressed": 148360,
+      "sha256": "6c447c22cb6ff12d06a7bcc873842e371c02119b73385a11f0366f2300cf6639",
+      "content": "d0c705dcfb048662e56bbc0c0ff3626be401ee68bb1cd12545c44af7fb5a78f9",
       "license": "Apache-2.0"
     },
     {
