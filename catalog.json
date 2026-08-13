@@ -1,22 +1,24 @@
 {
   "schema": 1,
-  "generatedAt": "2026-08-13T11:07:59Z",
-  "count": 11,
+  "generatedAt": "2026-08-13T17:15:24Z",
+  "count": 8,
   "skills": [
     {
-      "slug": "excalidraw-layout-rules",
-      "name": "excalidraw-layout-rules",
-      "description": "Layout rules for creating clean, readable Excalidraw diagrams programmatically via evaluate_expression. Prevents common mistakes: overlapping arrows, cramped text, unreadable labels.",
-      "trigger": "excalidraw|diagram|prozess.*zeichn|flowchart|flussdiagramm|visualisier.*prozess",
+      "slug": "daily-briefing",
+      "name": "daily-briefing",
+      "description": "Research today's developments in technology, digitalisation, data and AI, filter them against this vault, and render an interactive HTML dashboard that opens in a browser without Obsidian. Orders every item by what it changes for this user, extends tracked threads over time, plots marked technologies on a small tech radar, and offers per-item buttons to take an item into the vault as a source note, put it on the watchlist, or mark it as a radar candidate. Use for \"daily briefing\", \"briefing\", \"was gibt es Neues\", \"news update\", \"tech news\", \"brief mich\", \"update my briefing\", \"was ist heute passiert\", or when the user wants to be current on their professional topics.",
+      "trigger": "",
       "components": [
-        "prompt"
+        "prompt",
+        "scripts",
+        "references"
       ],
       "version": "1.0.0",
-      "file": "excalidraw-layout-rules.skill",
-      "bytes": 5884,
-      "uncompressed": 14230,
-      "sha256": "135ccf2d132c7be08264e7fb4c8e4a86fc067191b92ca379c142db06c36e67ec",
-      "content": "678f240b9deb583b7e315d2fb92378c368a92be3e737fdfcb2352efb5a4214c1",
+      "file": "daily-briefing.skill",
+      "bytes": 101991,
+      "uncompressed": 309820,
+      "sha256": "6646e6120eabd7636af51034edee69e4f3dde6180fde2ca004c1595b776d68ef",
+      "content": "1dd7526a108205d4ebc5e6424dc64e93050e073558381895f33ede07bce2aa7d",
       "license": "Apache-2.0"
     },
     {
@@ -36,9 +38,25 @@
       "license": "Apache-2.0"
     },
     {
+      "slug": "ingest",
+      "name": "ingest",
+      "description": "One source in, one note out, no dialog. Reads a PDF, Office file, web clip or markdown and writes an OKF note with overview, key statements and a position marker per statement, in 30 seconds to two minutes. Use it when speed beats depth, for inbox capture, image-heavy PDFs, short clips and Office files. Triggers include ingest this, schnell ingesten, nimm das auf, ab in die Inbox, quick ingest, webclip aufnehmen. NOT for a source you want to think through with the user, where the topics get picked and every claim gets a block-level link back into the source: that is ingest-deep. Not for meeting recordings: that is meeting-summary. Not for connecting a note that already exists to the rest of the vault: that is knowledge-link.",
+      "trigger": "schneller.*ingest|quick.*ingest|inbox.*aufnahme|webclip.*ingest|aufnehmen.*note|integriere.note",
+      "components": [
+        "prompt"
+      ],
+      "version": "1.0.0",
+      "file": "ingest.skill",
+      "bytes": 13773,
+      "uncompressed": 35809,
+      "sha256": "8439ec33e153e004dba7827c851585123d2b3188b25228c863d95b1980faa3c5",
+      "content": "2801a9c9b2b45179fd8bcc97312b21e0b27531be49268342616268a8082ca84c",
+      "license": "Apache-2.0"
+    },
+    {
       "slug": "ingest-deep",
       "name": "ingest-deep",
-      "description": "Deep ingest of one source in a Karpathy-style multi-turn dialog. Handles PDF, DOCX, PPTX, XLSX, Markdown, web clips and YouTube videos, including videos whose transcript is not in the page. Triage first, then the user picks topics and output mode, then block-level links point every claim back into the source. Use for \"ingest deep\", \"deep dive a source\", \"sense-making note\", \"Zettel aus dieser Quelle\", \"tiefer Ingest\", \"YouTube-Video ingesten\", \"Transkript in den Vault\". Not for quick inbox capture and not for meeting recordings.",
+      "description": "Deep ingest of one source in a Karpathy-style multi-turn dialog, 5 to 15 minutes. Triage first, then the user picks the topics and the output mode, then block-level links anchor every claim on a verbatim phrase in the source. Produces a sense-making note or several zettel. Handles PDF, DOCX, PPTX, XLSX, Markdown, web clips and YouTube videos, including videos whose transcript is not in the page. Use for \"ingest deep\", \"deep dive a source\", \"sense-making note\", \"Zettel aus dieser Quelle\", \"tiefer Ingest\", \"YouTube-Video ingesten\", \"Transkript in den Vault\". NOT when one note is enough and speed matters, with no questions asked: that is ingest. Not for meeting recordings: that is meeting-summary. Not for connecting a note that already exists to the rest of the vault: that is knowledge-link.",
       "trigger": "ingest.deep|deep.ingest|karpathy|sense.?making|multi.?turn.*ingest|tiefe.*ingest|deep.?dive.*quelle|youtube.*(ingest|transkript)|ingest.*youtube",
       "components": [
         "prompt",
@@ -46,58 +64,26 @@
       ],
       "version": "1.0.0",
       "file": "ingest-deep.skill",
-      "bytes": 32991,
-      "uncompressed": 81370,
-      "sha256": "e06a4f563cbce56a1fefb313861c5c4245fa16b46837be61e62b801af3f214cf",
-      "content": "46f85a650ecd62b4938cceaa2ff3644bf4d14749a6d9a6724784475fc343a93c",
+      "bytes": 33816,
+      "uncompressed": 83630,
+      "sha256": "885c1c167fbcb63dc0cfea0586fa2bc11513d2bb967b2c6bf9102568c04f419c",
+      "content": "5dbaba4001343c0f81cf92a0f3b7a14db10a79d3cd5a2b02b95f9f7064327bcd",
       "license": "Apache-2.0"
     },
     {
-      "slug": "knowledge-batch-ingest",
-      "name": "knowledge-batch-ingest",
-      "description": "Integrate an entire folder of notes and documents at once. Groups files thematically, presents proposals per group, and processes after user confirmation. Uses entity cache across files for token efficiency.",
-      "trigger": "batch.*ingest|alle.*integrier|ordner.*einpflege|inbox.*integrier|batch.*import|alle.*notes.*einordne",
+      "slug": "knowledge-link",
+      "name": "knowledge-link",
+      "description": "Wire an existing note into the knowledge graph. Reads the note, searches the vault for the topics, concepts and people that already have notes, then proposes properties, wikilinks and MOC entries and writes nothing before the user confirms. Creates a stub note only for a hub that earns one, never for a person or a project, where an unresolved link is the intended state. Use after an ingest, or on any note sitting unconnected. Triggers include verdrahte diese Notiz, ins Wissensnetz einhaengen, Notiz einordnen, Properties setzen, verknuepfe die Notiz, link this note, connect it to the graph, place this note. Does NOT ingest sources: a PDF, an Office file or a web clip goes to ingest or ingest-deep first, and this skill picks up the note they produced.",
+      "trigger": "verdrahte|einordne|ordne.*ein|einh(ä|ae)ng|wissensnetz|knowledge.?link|link.*note|connect.*(note|graph)|properties.*setz|verkn(ü|ue)pf",
       "components": [
         "prompt"
       ],
       "version": "1.0.0",
-      "file": "knowledge-batch-ingest.skill",
-      "bytes": 6316,
-      "uncompressed": 15733,
-      "sha256": "a6caa9983e6078df185ce5790baf3f8baf6dceca8693e883d57557d68d71cd16",
-      "content": "8c3790f05c9fdc9c9034cacb87637419cdba71e06115aac236f918bc4260ba97",
-      "license": "Apache-2.0"
-    },
-    {
-      "slug": "knowledge-ingest",
-      "name": "knowledge-ingest",
-      "description": "Integrate new notes into the knowledge graph. Create PDFs as markdown source notes. Set properties, links, MOC entries. Prefer existing entities, propose new ones as stub notes.",
-      "trigger": "integrier|einordne|ingest|einpflege|knowledge.*maintain|wissen.*pflege|note.*einordne|ordne.*ein|pdf.*umwandel|pdf.*markdown|quelle.*anlegen",
-      "components": [
-        "prompt"
-      ],
-      "version": "1.0.0",
-      "file": "knowledge-ingest.skill",
-      "bytes": 9068,
-      "uncompressed": 23757,
-      "sha256": "35eca05bfea831acdec15140ca394b1a7cb6c1673e711d37a6482d2e07134157",
-      "content": "9196a44df928f0e6b08f41fbf01347d7c07dee19a207bd7e464ad8d490c426cc",
-      "license": "Apache-2.0"
-    },
-    {
-      "slug": "knowledge-rename",
-      "name": "knowledge-rename",
-      "description": "Batch-rename attachments (PDFs, images) by convention. Author-Year_Title for sources, context-based for images.",
-      "trigger": "umbenennen|rename|dateiname|attachment.*name|benenne.*um|name.*korrig",
-      "components": [
-        "prompt"
-      ],
-      "version": "1.0.0",
-      "file": "knowledge-rename.skill",
-      "bytes": 5278,
-      "uncompressed": 13559,
-      "sha256": "46b66d8b04dc337df9a0665dd8a53eeaa13a4dac145bf1de9f10721aa3c42115",
-      "content": "b2866c3d578441682bdd7d0af9bd3bbf2045480bebd14493cc49c09c32623782",
+      "file": "knowledge-link.skill",
+      "bytes": 7827,
+      "uncompressed": 19714,
+      "sha256": "9e0a2ff82fc7c6fbcc9a10dc05cd06db5e1ac0be1e8dbcfffd9cb3e1df4e791c",
+      "content": "59599c3b4bef49c0bab10bcbf6cdd6df81f2c5631ed6bc0070fb72a808029fc8",
       "license": "Apache-2.0"
     },
     {
@@ -130,38 +116,6 @@
       "uncompressed": 16864,
       "sha256": "9946857dd84d8a8de01aeee4819bbeed54649dd2ba7517d2c3d7010f741025a0",
       "content": "c7015dcba94db55defbc48d0db1dccad3241af6421b4c3eac611e16c9d2a5e38",
-      "license": "Apache-2.0"
-    },
-    {
-      "slug": "office-workflow",
-      "name": "office-workflow",
-      "description": "Professional workflow for creating Office documents (PPTX, DOCX, XLSX) with structured process, design principles, and quality standards",
-      "trigger": "pr[aä]sentation.*erstell|erstell.*pr[aä]sentation|presentation.*creat|creat.*presentation|folie.*erstell|erstell.*folie|deck.*erstell|powerpoint|pptx|dokument.*erstell|erstell.*dokument|document.*creat|docx|word.*erstell|spreadsheet|tabelle.*erstell|xlsx|excel",
-      "components": [
-        "prompt"
-      ],
-      "version": "1.0.0",
-      "file": "office-workflow.skill",
-      "bytes": 5499,
-      "uncompressed": 13895,
-      "sha256": "794bafebac09d07037a7b9b619dc52f0be3c4f0e6991b2d5f58fed6e58b802bd",
-      "content": "4a2da074e7a0b3f3e793b431889552a78573cc1ca057a751e09350456801f690",
-      "license": "Apache-2.0"
-    },
-    {
-      "slug": "presentation-design",
-      "name": "presentation-design",
-      "description": "Universal presentation design principles -- content classification, storytelling frameworks, visual vocabulary. Applies to ALL presentations.",
-      "trigger": "pr[aä]sentation.*erstell|erstell.*pr[aä]sentation|presentation.*creat|creat.*presentation|folie.*erstell|erstell.*folie|deck.*erstell|powerpoint|pptx",
-      "components": [
-        "prompt"
-      ],
-      "version": "1.0.0",
-      "file": "presentation-design.skill",
-      "bytes": 6470,
-      "uncompressed": 15656,
-      "sha256": "c1f19226be1e037d8437a74a02f3fba0634c60a97c9a365d8696373cdb2485c0",
-      "content": "86a0b16a7fc8d4c9521c384964ca1262e95145b554463e4e54e04d42e23cbaee",
       "license": "Apache-2.0"
     },
     {
