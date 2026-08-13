@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "generatedAt": "2026-08-12T16:43:01Z",
-  "count": 10,
+  "generatedAt": "2026-08-13T11:03:54Z",
+  "count": 11,
   "skills": [
     {
       "slug": "excalidraw-layout-rules",
@@ -13,9 +13,10 @@
       ],
       "version": "1.0.0",
       "file": "excalidraw-layout-rules.skill",
-      "bytes": 1831,
-      "uncompressed": 2872,
-      "sha256": "cd2585c459baca0cff3b85d7eedd514632520d183feb6cc60f521c36e32f84c4"
+      "bytes": 5884,
+      "uncompressed": 14230,
+      "sha256": "135ccf2d132c7be08264e7fb4c8e4a86fc067191b92ca379c142db06c36e67ec",
+      "license": "Apache-2.0"
     },
     {
       "slug": "humanizer",
@@ -27,9 +28,26 @@
       ],
       "version": "1.0.0",
       "file": "humanizer.skill",
-      "bytes": 3544,
-      "uncompressed": 7297,
-      "sha256": "a55348491b009dedf9c90a8fceb974042dbb86b4f0f97723a912859e9a2ad6ca"
+      "bytes": 7559,
+      "uncompressed": 18655,
+      "sha256": "a15768f48665a34715358de259956231675bf561407e8924b812022a4a7596f1",
+      "license": "Apache-2.0"
+    },
+    {
+      "slug": "ingest-deep",
+      "name": "ingest-deep",
+      "description": "Deep ingest of one source in a Karpathy-style multi-turn dialog. Handles PDF, DOCX, PPTX, XLSX, Markdown, web clips and YouTube videos, including videos whose transcript is not in the page. Triage first, then the user picks topics and output mode, then block-level links point every claim back into the source. Use for \"ingest deep\", \"deep dive a source\", \"sense-making note\", \"Zettel aus dieser Quelle\", \"tiefer Ingest\", \"YouTube-Video ingesten\", \"Transkript in den Vault\". Not for quick inbox capture and not for meeting recordings.",
+      "trigger": "ingest.deep|deep.ingest|karpathy|sense.?making|multi.?turn.*ingest|tiefe.*ingest|deep.?dive.*quelle|youtube.*(ingest|transkript)|ingest.*youtube",
+      "components": [
+        "prompt",
+        "references"
+      ],
+      "version": "1.0.0",
+      "file": "ingest-deep.skill",
+      "bytes": 32991,
+      "uncompressed": 81370,
+      "sha256": "e06a4f563cbce56a1fefb313861c5c4245fa16b46837be61e62b801af3f214cf",
+      "license": "Apache-2.0"
     },
     {
       "slug": "knowledge-batch-ingest",
@@ -41,9 +59,10 @@
       ],
       "version": "1.0.0",
       "file": "knowledge-batch-ingest.skill",
-      "bytes": 2287,
-      "uncompressed": 4375,
-      "sha256": "2d1d2d0d771f60112098708ef9ae52705b2e66634dae2e8c2a8eb9158383e493"
+      "bytes": 6316,
+      "uncompressed": 15733,
+      "sha256": "a6caa9983e6078df185ce5790baf3f8baf6dceca8693e883d57557d68d71cd16",
+      "license": "Apache-2.0"
     },
     {
       "slug": "knowledge-ingest",
@@ -55,9 +74,10 @@
       ],
       "version": "1.0.0",
       "file": "knowledge-ingest.skill",
-      "bytes": 5225,
-      "uncompressed": 12549,
-      "sha256": "ee52c9bb8a44de74aebc4ef9ebf0f7b3ae20a6ed8837c0585bee903db735eab7"
+      "bytes": 9068,
+      "uncompressed": 23757,
+      "sha256": "35eca05bfea831acdec15140ca394b1a7cb6c1673e711d37a6482d2e07134157",
+      "license": "Apache-2.0"
     },
     {
       "slug": "knowledge-rename",
@@ -69,9 +89,10 @@
       ],
       "version": "1.0.0",
       "file": "knowledge-rename.skill",
-      "bytes": 1219,
-      "uncompressed": 2091,
-      "sha256": "2652a80dc0c9677877bbf09a114e8b0f359bedc571d9760a5f7feb4aa4d7bb34"
+      "bytes": 5278,
+      "uncompressed": 13559,
+      "sha256": "46b66d8b04dc337df9a0665dd8a53eeaa13a4dac145bf1de9f10721aa3c42115",
+      "license": "Apache-2.0"
     },
     {
       "slug": "meeting-summary",
@@ -83,9 +104,10 @@
       ],
       "version": "1.0.0",
       "file": "meeting-summary.skill",
-      "bytes": 5777,
-      "uncompressed": 13116,
-      "sha256": "cd4288f05b8867f82bba53116cefe50bb8f25d03497556624aa291d62155ddfe"
+      "bytes": 9432,
+      "uncompressed": 24333,
+      "sha256": "0194fe38f535591e058ab8a173ba58bbf39b289bf835e28382f83e541b57c715",
+      "license": "Apache-2.0"
     },
     {
       "slug": "note-creator",
@@ -97,9 +119,10 @@
       ],
       "version": "1.0.0",
       "file": "note-creator.skill",
-      "bytes": 2878,
-      "uncompressed": 5506,
-      "sha256": "0b2e160cbc059da8ecd41dfe30c52cbe57223deab26ff50ae8fa0c3fcb04171a"
+      "bytes": 6883,
+      "uncompressed": 16864,
+      "sha256": "9946857dd84d8a8de01aeee4819bbeed54649dd2ba7517d2c3d7010f741025a0",
+      "license": "Apache-2.0"
     },
     {
       "slug": "office-workflow",
@@ -111,9 +134,10 @@
       ],
       "version": "1.0.0",
       "file": "office-workflow.skill",
-      "bytes": 1466,
-      "uncompressed": 2537,
-      "sha256": "85613b9a1be57fdc2a6c4c93ecc9f563de3a1535cbd4fc0895cc87091a80e792"
+      "bytes": 5499,
+      "uncompressed": 13895,
+      "sha256": "794bafebac09d07037a7b9b619dc52f0be3c4f0e6991b2d5f58fed6e58b802bd",
+      "license": "Apache-2.0"
     },
     {
       "slug": "presentation-design",
@@ -125,23 +149,25 @@
       ],
       "version": "1.0.0",
       "file": "presentation-design.skill",
-      "bytes": 2434,
-      "uncompressed": 4298,
-      "sha256": "c54e47ceab55346791c17f0cc23f04118c99ea15b13e5d03a10d4c2cbe1bf725"
+      "bytes": 6470,
+      "uncompressed": 15656,
+      "sha256": "c1f19226be1e037d8437a74a02f3fba0634c60a97c9a365d8696373cdb2485c0",
+      "license": "Apache-2.0"
     },
     {
       "slug": "weekly-meeting-summary",
       "name": "weekly-meeting-summary",
-      "description": "Fasst alle Meeting-Notes der aktuellen Woche zu einem kompakten Weekly-Digest zusammen. Erstellt eine neue Note mit Kernaussagen, Entscheidungen, offenen Punkten und naechsten Schritten — geordnet nach Meeting. Trigger-Phrasen: weekly summary, Wochenzusammenfassung Meetings, summarise my meetings, fasse meine Meetings zusammen, weekly meeting digest, Meetings der Woche zusammenfassen, was war diese Woche in meinen Meetings.",
+      "description": "Condenses every meeting note of the current week into one compact weekly digest. Writes a new note with key statements, decisions, open points and next steps, ordered by meeting. Trigger phrases: weekly summary, Wochenzusammenfassung Meetings, summarise my meetings, fasse meine Meetings zusammen, weekly meeting digest, Meetings der Woche zusammenfassen, was war diese Woche in meinen Meetings.",
       "trigger": "",
       "components": [
         "prompt"
       ],
       "version": "1.0.0",
       "file": "weekly-meeting-summary.skill",
-      "bytes": 2105,
-      "uncompressed": 4172,
-      "sha256": "1f98804edd71b05bf6d7e51d8ae580c16fc9356f01c00cecb806dde7c14f835f"
+      "bytes": 6137,
+      "uncompressed": 15429,
+      "sha256": "12721f39e2c5a2560d6fb8f56079a08eab95eae9d3ea72348c151ca80f063ddf",
+      "license": "Apache-2.0"
     }
   ]
 }
