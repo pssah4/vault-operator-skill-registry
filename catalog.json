@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-08-13T23:32:55Z",
+  "generatedAt": "2026-08-22T14:43:57Z",
   "count": 10,
   "skills": [
     {
@@ -15,10 +15,10 @@
       ],
       "version": "1.0.0",
       "file": "daily-briefing.skill",
-      "bytes": 101991,
-      "uncompressed": 309820,
-      "sha256": "6646e6120eabd7636af51034edee69e4f3dde6180fde2ca004c1595b776d68ef",
-      "content": "1dd7526a108205d4ebc5e6424dc64e93050e073558381895f33ede07bce2aa7d",
+      "bytes": 177814,
+      "uncompressed": 548822,
+      "sha256": "ea797fb4911af002a7c9978cd6dcd2e82e4dae7518bcb16bb022274fefe9a695",
+      "content": "35ea63b287264fda5c5ff54dc209af8d6d62ac519590157a8ef5e9ad8b03e960",
       "license": "Apache-2.0"
     },
     {
@@ -138,9 +138,9 @@
       "license": "Apache-2.0"
     },
     {
-      "slug": "skill-creator",
-      "name": "skill-creator",
-      "description": "Design and build a Vault Operator skill together with the user. When they have a pain or a wish but no solution yet, work out the problem with them first, then run a requirements dialog, a feasibility check against the real runtime (tools, sandbox, vault), and a confirmed brief before any file is written. Every build passes a validation script whose verdict is a tool result, not a claim. Use this whenever the user wants to create, refine or automate a repeatable workflow, a domain expertise or a tool recipe as a skill; when something costs them time weekly and they cannot name the solution; and when they ask for a recurring deliverable, because the cadence is the signal, not the verb. Also use this to diagnose and fix a skill that misbehaves, even when the user only names the symptom. Triggers include \"create a skill\", \"build me a skill\", \"make this repeatable\", \"neuer Skill\", \"kannst du das automatisieren\", \"improve this skill\", \"der Skill macht X falsch\", \"warum verschwindet die Skill\", \"fix this skill\".",
+      "slug": "plaud-import",
+      "name": "plaud-import",
+      "description": "Reiner Ingest neuer Plaud-Aufnahmen als rohe Meeting-Notizen. Holt via MCP nur die Aufnahmen ohne vorhandene Vault-Note, laesst den User per ask_followup_question auswaehlen (mehrere per \"+\"-Sammeln) und legt je ausgewaehlter Aufnahme eine Notiz in Inbox/ an. Das rohe Transkript wird per get_transcript und sink_to_path direkt auf die Platte geschrieben und deterministisch zu \"**Speaker N:** Text\"-Markdown umgewandelt, ohne durch den LLM zu laufen. Deutung (TL;DR, Zusammenfassung, Sprecher-Benennung, Block-Refs) macht bewusst NICHT diese Skill, sondern die nachgelagerte meeting-summary-Skill pro Note. Dedup deterministisch ueber die feste Plaud-Aufnahme-ID im resource-Feld. Der Note-Bau laeuft ueber ein natives Tool ohne Write-Rate- oder Heap-Limit, ein ganzer Tag Meetings geht in einem Lauf. Trigger: \"hol neue Plaud-Transkripte\", \"Plaud-Aufnahmen in den Vault\", \"welche Plaud-Notes fehlen\", \"sync Plaud\".",
       "trigger": "",
       "components": [
         "prompt",
@@ -148,11 +148,11 @@
         "references"
       ],
       "version": "1.0.0",
-      "file": "skill-creator.skill",
-      "bytes": 62936,
-      "uncompressed": 148360,
-      "sha256": "6c447c22cb6ff12d06a7bcc873842e371c02119b73385a11f0366f2300cf6639",
-      "content": "d0c705dcfb048662e56bbc0c0ff3626be401ee68bb1cd12545c44af7fb5a78f9",
+      "file": "plaud-import.skill",
+      "bytes": 22861,
+      "uncompressed": 55996,
+      "sha256": "012dde84a944d5d2e5efd7cd074360c9a9fdd153a028c9bccbc2131ff8ca7cb0",
+      "content": "6e8daf5c2ba34a03a3ef388ca74d9ceeae073d0619217fa978ce725dbc2d2dd6",
       "license": "Apache-2.0"
     },
     {
