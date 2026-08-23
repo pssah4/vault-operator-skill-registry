@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-08-22T14:43:57Z",
+  "generatedAt": "2026-08-23T11:28:55Z",
   "count": 10,
   "skills": [
     {
@@ -149,10 +149,10 @@
       ],
       "version": "1.0.0",
       "file": "plaud-import.skill",
-      "bytes": 22861,
-      "uncompressed": 55996,
-      "sha256": "012dde84a944d5d2e5efd7cd074360c9a9fdd153a028c9bccbc2131ff8ca7cb0",
-      "content": "6e8daf5c2ba34a03a3ef388ca74d9ceeae073d0619217fa978ce725dbc2d2dd6",
+      "bytes": 25004,
+      "uncompressed": 61893,
+      "sha256": "56e4f2f18b3401d65777dbe80547c95d4d6a1423442e36f1c1d141a5b88bdd4f",
+      "content": "b48cc36f998a762512dc932db7431d9dbcd51fee429cfc0bb4ef250b6d6522b8",
       "license": "Apache-2.0"
     },
     {
