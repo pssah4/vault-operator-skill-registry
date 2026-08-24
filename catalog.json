@@ -1,12 +1,12 @@
 {
   "schema": 1,
-  "generatedAt": "2026-08-23T11:28:55Z",
-  "count": 10,
+  "generatedAt": "2026-08-24T09:28:55Z",
+  "count": 11,
   "skills": [
     {
       "slug": "daily-briefing",
       "name": "daily-briefing",
-      "description": "Research today's developments in technology, digitalisation, data and AI, filter them against this vault, and render an interactive HTML dashboard that opens in a browser without Obsidian. Orders every item by what it changes for this user, extends tracked threads over time, plots marked technologies on a small tech radar, and offers per-item buttons to take an item into the vault as a source note, put it on the watchlist, or mark it as a radar candidate. Use for \"daily briefing\", \"briefing\", \"was gibt es Neues\", \"news update\", \"tech news\", \"brief mich\", \"update my briefing\", \"was ist heute passiert\", or when the user wants to be current on their professional topics.",
+      "description": "Daily briefing on today's developments in technology, digitalisation, data and AI, filtered against this vault and rendered as an interactive HTML dashboard. Triggers include daily briefing, briefing, brief mich, was gibt es Neues, news update, tech news, was ist heute passiert.",
       "trigger": "",
       "components": [
         "prompt",
@@ -15,32 +15,32 @@
       ],
       "version": "1.0.0",
       "file": "daily-briefing.skill",
-      "bytes": 177814,
-      "uncompressed": 548822,
-      "sha256": "ea797fb4911af002a7c9978cd6dcd2e82e4dae7518bcb16bb022274fefe9a695",
-      "content": "35ea63b287264fda5c5ff54dc209af8d6d62ac519590157a8ef5e9ad8b03e960",
+      "bytes": 178715,
+      "uncompressed": 550097,
+      "sha256": "6ceb42b3716612d43d20a9da777661ce394ce84038269c421a321ecf7e95cfdf",
+      "content": "a0c9be44d187b2205afa6fea54a1a7023df5fa3a78b215a0f042f3c975787b72",
       "license": "Apache-2.0"
     },
     {
       "slug": "humanizer",
       "name": "humanizer",
-      "description": "Identifies and removes signs of AI-generated writing from text. Detects inflated symbolism, promotional language, superficial -ing analyses, vague attributions, em dash overuse, rule of three, AI vocabulary, passive voice, negative parallelisms, filler phrases, and more. Makes text sound natural and human-written.",
+      "description": "Humanize a text and remove the signs of AI-generated writing, from inflated symbolism and AI vocabulary to em dash overuse, rule of three, passive voice, negative parallelisms and filler phrases. Triggers include humanize this, Text prüfen, AI-Sprachmuster entfernen.",
       "trigger": "humanize|humanis|human.*klingen|menschlich.*klingen|ai.*writing|ki.*text.*entfernen|natuerlich.*klingen|sound.*natural|remove.*ai|ai.*pattern|slop|ki.*muster|text.*ueberarbeiten|rewrite.*natural|mensch.*schreiben",
       "components": [
         "prompt"
       ],
       "version": "1.0.0",
       "file": "humanizer.skill",
-      "bytes": 7559,
-      "uncompressed": 18655,
-      "sha256": "a15768f48665a34715358de259956231675bf561407e8924b812022a4a7596f1",
-      "content": "95058f0a18664a0975379ba06adb3b713e09530ca4b7ac140756d0595b7def9c",
+      "bytes": 7564,
+      "uncompressed": 18608,
+      "sha256": "2d656af03850ad37ef44ceeba6ec78f1adbd273ff266cc6cc8ecf8f0f15c0bb8",
+      "content": "0b289beee347fb5d0dfb7f69ebca47a28a1cf9a97ade03acda9fbc05ef9c41a6",
       "license": "Apache-2.0"
     },
     {
       "slug": "ingest",
       "name": "ingest",
-      "description": "One source in, one note out, no dialog. Reads a PDF, Office file, web clip or markdown and writes an OKF note with overview, key statements and a position marker per statement, in 30 seconds to two minutes. Use it when speed beats depth, for inbox capture, image-heavy PDFs, short clips and Office files. Triggers include ingest this, schnell ingesten, nimm das auf, ab in die Inbox, quick ingest, webclip aufnehmen. NOT for a source you want to think through with the user, where the topics get picked and every claim gets a block-level link back into the source: that is ingest-deep. Not for meeting recordings: that is meeting-summary. Not for connecting a note that already exists to the rest of the vault: that is knowledge-link.",
+      "description": "One source in, one note out, no dialog. A PDF, Office file, web clip or markdown becomes an OKF note in under two minutes. Triggers include ingest this, schnell ingesten, nimm das auf, ab in die Inbox, quick ingest, webclip aufnehmen. For dialog and block links use ingest-deep.",
       "trigger": "schneller.*ingest|quick.*ingest|inbox.*aufnahme|webclip.*ingest|aufnehmen.*note|integriere.note",
       "components": [
         "prompt",
@@ -48,16 +48,16 @@
       ],
       "version": "1.0.0",
       "file": "ingest.skill",
-      "bytes": 14823,
-      "uncompressed": 37486,
-      "sha256": "b1c6b2ddda1d883593ba432f7f57089596f9e5662e4b580f630af53e9eb3bc96",
-      "content": "b55feb77222e579b2906c43f0dab304c2037a2a50dd12688f6ee4e29267345fe",
+      "bytes": 15431,
+      "uncompressed": 38144,
+      "sha256": "f9aebf2a7badcf0a2ad2776fd1e1cd62e53552aba4c9e4d52aeab976358a66ae",
+      "content": "4dd456e7330b013b7b07ea717719d94bfec619fe5e74c058d50bd7421f1e4c6b",
       "license": "Apache-2.0"
     },
     {
       "slug": "ingest-deep",
       "name": "ingest-deep",
-      "description": "Deep ingest of one source in a Karpathy-style multi-turn dialog, 5 to 15 minutes. Triage first, then the user picks the topics and the output mode, then block-level links anchor every claim on a verbatim phrase in the source. Produces a sense-making note or several zettel. Handles PDF, DOCX, PPTX, XLSX, Markdown, web clips and YouTube videos, including videos whose transcript is not in the page. Use for \"ingest deep\", \"deep dive a source\", \"sense-making note\", \"Zettel aus dieser Quelle\", \"tiefer Ingest\", \"YouTube-Video ingesten\", \"Transkript in den Vault\". NOT when one note is enough and speed matters, with no questions asked: that is ingest. Not for meeting recordings: that is meeting-summary. Not for connecting a note that already exists to the rest of the vault: that is knowledge-link.",
+      "description": "Deep ingest of one source in a multi-turn dialog, with block-level links back into it. A PDF, Office file, web clip or YouTube video becomes a sense-making note or several zettel. Triggers include ingest deep, deep dive a source, tiefer Ingest, YouTube-Video ingesten. One fast note is ingest.",
       "trigger": "ingest.deep|deep.ingest|karpathy|sense.?making|multi.?turn.*ingest|tiefe.*ingest|deep.?dive.*quelle|youtube.*(ingest|transkript)|ingest.*youtube",
       "components": [
         "prompt",
@@ -65,16 +65,16 @@
       ],
       "version": "1.0.0",
       "file": "ingest-deep.skill",
-      "bytes": 34959,
-      "uncompressed": 85549,
-      "sha256": "9493e2165b72abc5ef6a6faa0ce36918fe50fb02d2bb6fd487717af6e94be1f6",
-      "content": "9db04a07e8271412049a28d0d7f13eeff688cb845a51639e1f8cabdb6a3edcc4",
+      "bytes": 35878,
+      "uncompressed": 86785,
+      "sha256": "e424f8fcb5f9beb4fd2c6a2beae59fb3792a0f86306e21a58bf9227732b21098",
+      "content": "8aba0e0a40586967b1c1e9b944541badaee1c2dc58dd97e0b0ac9389cb4160aa",
       "license": "Apache-2.0"
     },
     {
       "slug": "interview-insights",
       "name": "interview-insights",
-      "description": "Summarizes a single qualitative product interview into a citable OKF \"interview\" note (phase-detected, confirmed before writing). Also synthesizes several named interview notes into a weighted, actionable Insight Report, a team share-out, a Board Dashboard, and one themeable offline HTML Insight Board. Delivers real synthesis (claim + evidence + weight + implication + confidence + uncertainty), not an interview summary; asks at the start for a hypothesis set / business analysis and, if given, adds a Hypothesen view classifying each assumption validiert / falsifiziert / unklar. Asks for the design template first and, for a corporate design, derives colours, font, logo and icons from the real brand assets.",
+      "description": "Turns product interviews into a citable OKF interview note and, across several named notes, a weighted Insight Report plus an offline HTML Insight Board. Triggers include Interview auswerten, Insight Report, interview synthesis, Insight Board, Interviews zusammenführen.",
       "trigger": "",
       "components": [
         "prompt",
@@ -83,26 +83,27 @@
       ],
       "version": "1.0.0",
       "file": "interview-insights.skill",
-      "bytes": 71372,
-      "uncompressed": 165859,
-      "sha256": "5615c6cb208b410bc3e441c9bbb91e9cae08b6e6fd8d75429f54f0d8098bdda7",
-      "content": "0c4ad0072c238c0b84807fb6ffb9fa54cf7b15443c959e28c2b279891c7c63c7",
+      "bytes": 72220,
+      "uncompressed": 167183,
+      "sha256": "154514d5510983c538a5238536e88f20a544d09837501aeee540ca48765c6b66",
+      "content": "a2186775aa669997fe8211a6d98dd06a4fe5571cdf317d1828f4afe2ae8e0a5f",
       "license": "Apache-2.0"
     },
     {
       "slug": "knowledge-link",
       "name": "knowledge-link",
-      "description": "Wire an existing note into the knowledge graph. Reads the note, searches the vault for the topics, concepts and people that already have notes, then proposes properties, wikilinks and MOC entries and writes nothing before the user confirms. Creates a stub note only for a hub that earns one, never for a person or a project, where an unresolved link is the intended state. Use after an ingest, or on any note sitting unconnected. Triggers include verdrahte diese Notiz, ins Wissensnetz einhaengen, Notiz einordnen, Properties setzen, verknuepfe die Notiz, link this note, connect it to the graph, place this note. Does NOT ingest sources: a PDF, an Office file or a web clip goes to ingest or ingest-deep first, and this skill picks up the note they produced.",
+      "description": "Wire a note that already exists into the knowledge graph, with properties, wikilinks and MOC entries proposed before anything is written. Triggers include verdrahte diese Notiz, Notiz einordnen, verknüpfe die Notiz, link this note, connect it to the graph. A source file goes to ingest first.",
       "trigger": "verdrahte|einordne|ordne.*ein|einh(ä|ae)ng|wissensnetz|knowledge.?link|link.*note|connect.*(note|graph)|properties.*setz|verkn(ü|ue)pf",
       "components": [
-        "prompt"
+        "prompt",
+        "references"
       ],
       "version": "1.0.0",
       "file": "knowledge-link.skill",
-      "bytes": 7827,
-      "uncompressed": 19714,
-      "sha256": "9e0a2ff82fc7c6fbcc9a10dc05cd06db5e1ac0be1e8dbcfffd9cb3e1df4e791c",
-      "content": "59599c3b4bef49c0bab10bcbf6cdd6df81f2c5631ed6bc0070fb72a808029fc8",
+      "bytes": 8352,
+      "uncompressed": 20202,
+      "sha256": "599b8e4b1b35f65a5d21abf006716565caca864a677861293f02c83c206ccbe0",
+      "content": "8e7b4b263db18304822da7c0ce425f70621e48e0d7de0f7291cee7006f9c0126",
       "license": "Apache-2.0"
     },
     {
@@ -111,36 +112,39 @@
       "description": "Compact summary of a transcript note that stays digestible in under a minute. Strictly on the transcript, no interpretations. Sets block-IDs at key passages and links each statement in the summary discreetly via ↗ symbol to the source passage. Single-note layout (summary on top, transcript below).",
       "trigger": "meeting.*summary|meeting.*zusammenfassung|protokoll|transkript.*zusammenfassung|besprechung.*notiz",
       "components": [
-        "prompt"
+        "prompt",
+        "scripts",
+        "references"
       ],
       "version": "1.0.0",
       "file": "meeting-summary.skill",
-      "bytes": 9432,
-      "uncompressed": 24333,
-      "sha256": "0194fe38f535591e058ab8a173ba58bbf39b289bf835e28382f83e541b57c715",
-      "content": "ac2bf0ab2f917ad80fc8ce9417210c9333ba39c4ef5eb92b08b499ec8a7004cf",
+      "bytes": 17632,
+      "uncompressed": 41474,
+      "sha256": "33ea8a51328e3ada7170d188d68a2881bee85ff608d79102e2a8621bf7a7c0c3",
+      "content": "9c3c49c058f04263559e72ae187eaa438a79953cc207ace8ed96752732d00483",
       "license": "Apache-2.0"
     },
     {
       "slug": "note-creator",
       "name": "note-creator",
-      "description": "Creates new Obsidian notes with content that is always humanized and directly citable (zitierfähig). Triggered whenever the user asks to create, write, or draft a note, document, summary, or any vault content. Enforces the humanizer skill on all generated text before writing to the vault. Handles German umlauts (ö ä ü) correctly. Avoids em dashes and en dashes. Produces natural, human-sounding prose.",
+      "description": "Creates a new Obsidian note with humanized, directly citable text, in German or English. Use whenever the user asks to create, write or draft a note, a document, a summary or any other vault content.",
       "trigger": "",
       "components": [
-        "prompt"
+        "prompt",
+        "references"
       ],
       "version": "1.0.0",
       "file": "note-creator.skill",
-      "bytes": 6883,
-      "uncompressed": 16864,
-      "sha256": "9946857dd84d8a8de01aeee4819bbeed54649dd2ba7517d2c3d7010f741025a0",
-      "content": "c7015dcba94db55defbc48d0db1dccad3241af6421b4c3eac611e16c9d2a5e38",
+      "bytes": 7206,
+      "uncompressed": 17071,
+      "sha256": "c4b1352843028d7c8a91320477ea151804314bf9ca2fa0d3826d4a2ee603ea52",
+      "content": "03cd40b2375ade13914b1e9d6e731ff056608c03cb7ebeacdb1df13caee4eb82",
       "license": "Apache-2.0"
     },
     {
       "slug": "plaud-import",
       "name": "plaud-import",
-      "description": "Reiner Ingest neuer Plaud-Aufnahmen als rohe Meeting-Notizen. Holt via MCP nur die Aufnahmen ohne vorhandene Vault-Note, laesst den User per ask_followup_question auswaehlen (mehrere per \"+\"-Sammeln) und legt je ausgewaehlter Aufnahme eine Notiz in Inbox/ an. Das rohe Transkript wird per get_transcript und sink_to_path direkt auf die Platte geschrieben und deterministisch zu \"**Speaker N:** Text\"-Markdown umgewandelt, ohne durch den LLM zu laufen. Deutung (TL;DR, Zusammenfassung, Sprecher-Benennung, Block-Refs) macht bewusst NICHT diese Skill, sondern die nachgelagerte meeting-summary-Skill pro Note. Dedup deterministisch ueber die feste Plaud-Aufnahme-ID im resource-Feld. Der Note-Bau laeuft ueber ein natives Tool ohne Write-Rate- oder Heap-Limit, ein ganzer Tag Meetings geht in einem Lauf. Trigger: \"hol neue Plaud-Transkripte\", \"Plaud-Aufnahmen in den Vault\", \"welche Plaud-Notes fehlen\", \"sync Plaud\".",
+      "description": "Holt neue Plaud-Aufnahmen als rohe Meeting-Notizen in den Vault. Trigger sind hol neue Plaud-Transkripte, Plaud-Aufnahmen in den Vault, welche Plaud-Notes fehlen, sync Plaud. Nur der Ingest, die Deutung mit TL;DR, Zusammenfassung und Sprechernamen macht danach meeting-summary.",
       "trigger": "",
       "components": [
         "prompt",
@@ -149,26 +153,45 @@
       ],
       "version": "1.0.0",
       "file": "plaud-import.skill",
-      "bytes": 25004,
-      "uncompressed": 61893,
-      "sha256": "56e4f2f18b3401d65777dbe80547c95d4d6a1423442e36f1c1d141a5b88bdd4f",
-      "content": "b48cc36f998a762512dc932db7431d9dbcd51fee429cfc0bb4ef250b6d6522b8",
+      "bytes": 25908,
+      "uncompressed": 62569,
+      "sha256": "6b76028523a627b975d2b40412fcf137c0681d793cf61aac01b840aaeb1f2ccb",
+      "content": "2147411b89340e9892d8c03465ef4f41027e3a21845818ed2f914c16e927f54e",
+      "license": "Apache-2.0"
+    },
+    {
+      "slug": "skill-creator",
+      "name": "skill-creator",
+      "description": "Create, improve or debug a Vault Operator skill. Also right when a task costs time every week, or the user wants a recurring deliverable but cannot name the solution. Triggers include create a skill, neuer Skill, make this repeatable, kannst du das automatisieren, der Skill macht X falsch.",
+      "trigger": "",
+      "components": [
+        "prompt",
+        "scripts",
+        "references"
+      ],
+      "version": "1.0.0",
+      "file": "skill-creator.skill",
+      "bytes": 62940,
+      "uncompressed": 148419,
+      "sha256": "96abd1766d3fe46f75320794d9faf9079ee33853531ab9c03d06255a079efbbb",
+      "content": "6ca7256ece897515967a97d03c2214b11361dc171582b8137e593d3a5b61e868",
       "license": "Apache-2.0"
     },
     {
       "slug": "weekly-meeting-summary",
       "name": "weekly-meeting-summary",
-      "description": "Condenses every meeting note of the current week into one compact weekly digest. Writes a new note with key statements, decisions, open points and next steps, ordered by meeting. Trigger phrases: weekly summary, Wochenzusammenfassung Meetings, summarise my meetings, fasse meine Meetings zusammen, weekly meeting digest, Meetings der Woche zusammenfassen, was war diese Woche in meinen Meetings.",
+      "description": "Condenses the current week's meeting notes into one digest with decisions, open points and next steps. Triggers include weekly summary, Wochenzusammenfassung Meetings, summarise my meetings, fasse meine Meetings zusammen, was war diese Woche in meinen Meetings.",
       "trigger": "",
       "components": [
-        "prompt"
+        "prompt",
+        "references"
       ],
       "version": "1.0.0",
       "file": "weekly-meeting-summary.skill",
-      "bytes": 6137,
-      "uncompressed": 15429,
-      "sha256": "12721f39e2c5a2560d6fb8f56079a08eab95eae9d3ea72348c151ca80f063ddf",
-      "content": "95d5973de64e9f1fcc9b17e3a3f5c216de6c094b36da6ecaedccd1c173209949",
+      "bytes": 6663,
+      "uncompressed": 15943,
+      "sha256": "c9eceb0d5550c099aa5278503f1633f36582d33cacb76be4ae706c97035871b9",
+      "content": "8f4a40cc113069e7b32dcfcc0f43031ffd1766b62dfa929211ae928050e02240",
       "license": "Apache-2.0"
     }
   ]
