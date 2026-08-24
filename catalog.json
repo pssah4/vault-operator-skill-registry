@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-08-24T09:28:55Z",
+  "generatedAt": "2026-08-24T10:10:33Z",
   "count": 11,
   "skills": [
     {
@@ -13,12 +13,12 @@
         "scripts",
         "references"
       ],
-      "version": "1.0.0",
+      "version": "1.0.1",
       "file": "daily-briefing.skill",
-      "bytes": 178715,
-      "uncompressed": 550097,
-      "sha256": "6ceb42b3716612d43d20a9da777661ce394ce84038269c421a321ecf7e95cfdf",
-      "content": "a0c9be44d187b2205afa6fea54a1a7023df5fa3a78b215a0f042f3c975787b72",
+      "bytes": 178726,
+      "uncompressed": 550112,
+      "sha256": "4cb1787ac1d5d93db10a99d6fee59152c0f606bef9de057294dc637207bc103f",
+      "content": "f622cb979a86a2c421283b3f97bfc29f1588d1226509ad6be5fe44f7e7159b62",
       "license": "Apache-2.0"
     },
     {
@@ -29,12 +29,12 @@
       "components": [
         "prompt"
       ],
-      "version": "1.0.0",
+      "version": "1.0.1",
       "file": "humanizer.skill",
-      "bytes": 7564,
-      "uncompressed": 18608,
-      "sha256": "2d656af03850ad37ef44ceeba6ec78f1adbd273ff266cc6cc8ecf8f0f15c0bb8",
-      "content": "0b289beee347fb5d0dfb7f69ebca47a28a1cf9a97ade03acda9fbc05ef9c41a6",
+      "bytes": 7574,
+      "uncompressed": 18623,
+      "sha256": "e2adabf0bd2604017f5ac66a431c49e9f4ec5275c37883cc41e97aac34074e97",
+      "content": "a99c4bb4ff057fb908ddd67e7c313b87e343e9573bc2166060718ab59b7fc014",
       "license": "Apache-2.0"
     },
     {
@@ -46,12 +46,12 @@
         "prompt",
         "references"
       ],
-      "version": "1.0.0",
+      "version": "1.0.1",
       "file": "ingest.skill",
-      "bytes": 15431,
-      "uncompressed": 38144,
-      "sha256": "f9aebf2a7badcf0a2ad2776fd1e1cd62e53552aba4c9e4d52aeab976358a66ae",
-      "content": "4dd456e7330b013b7b07ea717719d94bfec619fe5e74c058d50bd7421f1e4c6b",
+      "bytes": 15442,
+      "uncompressed": 38159,
+      "sha256": "330fba1ce7c94ce73794e9700edbea7ba7a02c3f1456b49e6b31a158f76f3b81",
+      "content": "a3cf1c794d74c3ae55294995ad2b77442bde6b0014b55d29586154b4614d250d",
       "license": "Apache-2.0"
     },
     {
@@ -63,12 +63,12 @@
         "prompt",
         "references"
       ],
-      "version": "1.0.0",
+      "version": "1.0.1",
       "file": "ingest-deep.skill",
-      "bytes": 35878,
-      "uncompressed": 86785,
-      "sha256": "e424f8fcb5f9beb4fd2c6a2beae59fb3792a0f86306e21a58bf9227732b21098",
-      "content": "8aba0e0a40586967b1c1e9b944541badaee1c2dc58dd97e0b0ac9389cb4160aa",
+      "bytes": 35887,
+      "uncompressed": 86800,
+      "sha256": "2a87c0f043917ce334c935fa8505c7327050da45948446abb23bb6560827b8ce",
+      "content": "7e631c39b8e313dcfc73e278310f41ee267e7067a45cf762965e3a6bb7b90b0e",
       "license": "Apache-2.0"
     },
     {
@@ -81,12 +81,12 @@
         "scripts",
         "references"
       ],
-      "version": "1.0.0",
+      "version": "1.0.1",
       "file": "interview-insights.skill",
-      "bytes": 72220,
-      "uncompressed": 167183,
-      "sha256": "154514d5510983c538a5238536e88f20a544d09837501aeee540ca48765c6b66",
-      "content": "a2186775aa669997fe8211a6d98dd06a4fe5571cdf317d1828f4afe2ae8e0a5f",
+      "bytes": 72229,
+      "uncompressed": 167198,
+      "sha256": "916cbbfab45ba1462e42a12534dc4d6d4e85147f0ca777d301ccbd12901d0377",
+      "content": "0af4c868ca80d115a0f056cd19fc61603bf78a54fb1403cca22ef711fcf5979b",
       "license": "Apache-2.0"
     },
     {
@@ -98,12 +98,12 @@
         "prompt",
         "references"
       ],
-      "version": "1.0.0",
+      "version": "1.0.1",
       "file": "knowledge-link.skill",
-      "bytes": 8352,
-      "uncompressed": 20202,
-      "sha256": "599b8e4b1b35f65a5d21abf006716565caca864a677861293f02c83c206ccbe0",
-      "content": "8e7b4b263db18304822da7c0ce425f70621e48e0d7de0f7291cee7006f9c0126",
+      "bytes": 8362,
+      "uncompressed": 20217,
+      "sha256": "5a86eb23e3e2f6b69c650f37e18b5ad68e7d01c8b277fc652f54cc1ec6f43ebb",
+      "content": "a2fd786651fa8c1b617bd4ced7d7ab679802d9ebb7d2c8186abb96ec57c50041",
       "license": "Apache-2.0"
     },
     {
@@ -116,12 +116,12 @@
         "scripts",
         "references"
       ],
-      "version": "1.0.0",
+      "version": "1.0.1",
       "file": "meeting-summary.skill",
-      "bytes": 17632,
-      "uncompressed": 41474,
-      "sha256": "33ea8a51328e3ada7170d188d68a2881bee85ff608d79102e2a8621bf7a7c0c3",
-      "content": "9c3c49c058f04263559e72ae187eaa438a79953cc207ace8ed96752732d00483",
+      "bytes": 17643,
+      "uncompressed": 41489,
+      "sha256": "e6a88a96210fa16736aded64ff9ef5a4633c392c34c0d3a01bd25adc3d707c77",
+      "content": "f1faa220d9221e7e340a217dd67535bc25b96abbc0f4171191b5323a9646fc27",
       "license": "Apache-2.0"
     },
     {
@@ -133,12 +133,12 @@
         "prompt",
         "references"
       ],
-      "version": "1.0.0",
+      "version": "1.0.1",
       "file": "note-creator.skill",
-      "bytes": 7206,
-      "uncompressed": 17071,
-      "sha256": "c4b1352843028d7c8a91320477ea151804314bf9ca2fa0d3826d4a2ee603ea52",
-      "content": "03cd40b2375ade13914b1e9d6e731ff056608c03cb7ebeacdb1df13caee4eb82",
+      "bytes": 7217,
+      "uncompressed": 17086,
+      "sha256": "47cc548a63a9e5459a1bf4ce379abe10be4aa423ae063c77bef96177b87486fd",
+      "content": "5256aee277be94644d98110547155d8180c80944d91e90379bbc5a15cb5d6cb5",
       "license": "Apache-2.0"
     },
     {
@@ -151,12 +151,12 @@
         "scripts",
         "references"
       ],
-      "version": "1.0.0",
+      "version": "1.0.1",
       "file": "plaud-import.skill",
-      "bytes": 25908,
-      "uncompressed": 62569,
-      "sha256": "6b76028523a627b975d2b40412fcf137c0681d793cf61aac01b840aaeb1f2ccb",
-      "content": "2147411b89340e9892d8c03465ef4f41027e3a21845818ed2f914c16e927f54e",
+      "bytes": 25920,
+      "uncompressed": 62584,
+      "sha256": "43f242f52f9ef93d855581cb01f8a329914148f80a5906fdc9889fce8ad40918",
+      "content": "2b2f7c9364a893542f1254cfd1a6c9d78a3cfdcb1b73805be4f38df1fe5932c6",
       "license": "Apache-2.0"
     },
     {
@@ -169,12 +169,12 @@
         "scripts",
         "references"
       ],
-      "version": "1.0.0",
+      "version": "1.0.1",
       "file": "skill-creator.skill",
-      "bytes": 62940,
-      "uncompressed": 148419,
-      "sha256": "96abd1766d3fe46f75320794d9faf9079ee33853531ab9c03d06255a079efbbb",
-      "content": "6ca7256ece897515967a97d03c2214b11361dc171582b8137e593d3a5b61e868",
+      "bytes": 62951,
+      "uncompressed": 148434,
+      "sha256": "e827975127377b960d8a79c00f0c1d21ab0865f123cfb7c17cd6acb786bfe2ce",
+      "content": "e59db09d9c001c70042b51c353ccc2efb8b0e807acd8f4c671987f4bb262532f",
       "license": "Apache-2.0"
     },
     {
@@ -186,12 +186,12 @@
         "prompt",
         "references"
       ],
-      "version": "1.0.0",
+      "version": "1.0.1",
       "file": "weekly-meeting-summary.skill",
-      "bytes": 6663,
-      "uncompressed": 15943,
-      "sha256": "c9eceb0d5550c099aa5278503f1633f36582d33cacb76be4ae706c97035871b9",
-      "content": "8f4a40cc113069e7b32dcfcc0f43031ffd1766b62dfa929211ae928050e02240",
+      "bytes": 6674,
+      "uncompressed": 15958,
+      "sha256": "61572e9f28c03e69f1605fe31debe39498b34cff705aa74e8633410f2d6232ca",
+      "content": "28f2128a824c8200dd41dcbcf7e01d9b25aed10cd5d9ab0bfe9e37247c7efb78",
       "license": "Apache-2.0"
     }
   ]
