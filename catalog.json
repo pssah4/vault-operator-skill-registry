@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-08-24T15:29:32Z",
+  "generatedAt": "2026-08-24T15:37:02Z",
   "count": 11,
   "skills": [
     {
@@ -116,12 +116,12 @@
         "scripts",
         "references"
       ],
-      "version": "1.0.1",
+      "version": "1.1.0",
       "file": "meeting-summary.skill",
-      "bytes": 17643,
+      "bytes": 17656,
       "uncompressed": 41489,
-      "sha256": "e6a88a96210fa16736aded64ff9ef5a4633c392c34c0d3a01bd25adc3d707c77",
-      "content": "f1faa220d9221e7e340a217dd67535bc25b96abbc0f4171191b5323a9646fc27",
+      "sha256": "4b745170c616d2e1beb8582c657af0699ba9633166208c4f2cb95e241c2a119f",
+      "content": "95dfa20c30019c5d15602b0ee938bd4da830ed5866c7ebc9667bf9a293cc6e2c",
       "license": "Apache-2.0"
     },
     {
