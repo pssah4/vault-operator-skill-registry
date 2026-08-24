@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-08-24T10:10:33Z",
+  "generatedAt": "2026-08-24T15:29:32Z",
   "count": 11,
   "skills": [
     {
@@ -169,12 +169,12 @@
         "scripts",
         "references"
       ],
-      "version": "1.0.1",
+      "version": "1.0.2",
       "file": "skill-creator.skill",
-      "bytes": 62951,
-      "uncompressed": 148434,
-      "sha256": "e827975127377b960d8a79c00f0c1d21ab0865f123cfb7c17cd6acb786bfe2ce",
-      "content": "e59db09d9c001c70042b51c353ccc2efb8b0e807acd8f4c671987f4bb262532f",
+      "bytes": 63538,
+      "uncompressed": 149987,
+      "sha256": "c800a4d968af27a30776d28cbda064812e4e695e35fdddfde96cc4702a5d20d1",
+      "content": "a256c4c898873f780bb9b2fc7656ec78d15fa6c87c5be9e18f1faae3477b8244",
       "license": "Apache-2.0"
     },
     {
