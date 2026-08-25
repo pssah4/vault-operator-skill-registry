@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "generatedAt": "2026-08-24T15:37:02Z",
+  "generatedAt": "2026-08-25T09:05:46Z",
   "count": 11,
   "skills": [
     {
@@ -13,12 +13,12 @@
         "scripts",
         "references"
       ],
-      "version": "1.0.1",
+      "version": "1.0.3",
       "file": "daily-briefing.skill",
-      "bytes": 178726,
-      "uncompressed": 550112,
-      "sha256": "4cb1787ac1d5d93db10a99d6fee59152c0f606bef9de057294dc637207bc103f",
-      "content": "f622cb979a86a2c421283b3f97bfc29f1588d1226509ad6be5fe44f7e7159b62",
+      "bytes": 179846,
+      "uncompressed": 553403,
+      "sha256": "45a86f2b93e66b56acce9be5a329bdf4d11d37923a23844637622f57e6135705",
+      "content": "8a0712c36f3cc282dd40fcb3b436c8fa27010491cbcce162c0ec47a66a24b7ba",
       "license": "Apache-2.0"
     },
     {
